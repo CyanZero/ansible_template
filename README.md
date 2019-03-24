@@ -1,4 +1,4 @@
-#A practical Ansible template
+# A practical Ansible template
 
 This is a practical Ansible template that can be used immediately to support different stages and multiple cloud
 
@@ -29,28 +29,28 @@ This is a practical Ansible template that can be used immediately to support dif
 *  ansible
 	*  local
 		*  group_vars
-			```all```
+			* ```all```
 		*  inventory
-			```hosts```
-	*  dev_gce
+			* ```hosts```
+	*  dev_gcp
 		*  group_vars
-			```all```
+			* ```all```
 		*  inventory
-			```hosts```
-			```gce.py```
-			```dev_gce.ini```
+			* ```hosts```
+			* ```gce.py```
+			* ```dev_gce.ini```
 	*  staging
 	*  prod
 	*  playbooks
-		```site.yml```
-		```server_conf.yml```
+			* ```site.yml```
+			* ```server_conf.yml```
 		*  roles
 			*  tasks
-			```main.yml```
+				* ```main.yml```
 			*  templates
-			```syslog.conf.tpl```
+				* ```syslog.conf.tpl```
 			*  handlers
-			```handlers.yml```
+				* ```handlers.yml```
 		*  common
 		*  java
 		*  nginx
@@ -66,12 +66,12 @@ This is a practical Ansible template that can be used immediately to support dif
 ```export GCE_INI_PATH=${path to gce.ini}```
 ###Verify setup and inventory
 Get the inventory list
-```./dev/inventory/gce.py```
+```./dev_gcp/inventory/gce.py```
 
 ### Practical tips
-*Use differnt folder for different ENV, e.g. local, dev and prod*
-*Roles are shared common tasks*
-*Assign multiple roles to a host*
-*Host is a set of instance group*
-*Use site.yml to run multple playbooks*
-*Load tasks dynamically by passing in variablies*
+* Use differnt folder for different ENV, e.g. local, dev and prod
+* Roles are shared common tasks
+* Assign multiple roles to a host
+* Host is a set of instance group
+* Use site.yml to run multple playbooks
+* Load tasks dynamically by passing in variablies
