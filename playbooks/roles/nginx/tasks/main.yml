@@ -1,0 +1,5 @@
+---
+
+- debug:
+    msg: "Testing Nginx setup"
+- include: nginx.yml

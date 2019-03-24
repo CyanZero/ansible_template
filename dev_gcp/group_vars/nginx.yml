@@ -1,0 +1,4 @@
+# Nginx
+nginx_conf: nginx.conf
+site_conf: default.conf
+nginx_path: /etc/nginx

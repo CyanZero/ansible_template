@@ -1,0 +1,7 @@
+env_name: dev
+app_user: jenkins
+src_folder: /tmp
+working_folder: /opt
+
+# Default action if action_name is not indicated
+action_name: default

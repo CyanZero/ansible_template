@@ -1,0 +1,9 @@
+- hosts: tag_web-server
+  vars:
+   action_name: conf
+   env_conf: true
+  become: true
+  roles:
+    - common
+    - nginx
+

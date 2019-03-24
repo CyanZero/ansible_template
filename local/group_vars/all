@@ -1,0 +1,40 @@
+
+env_name: dev
+env_prefix: dev-
+app_user: jenkins
+src_folder: /tmp
+working_folder: /opt
+
+# Default action is defualt
+action_name: default
+
+#MongoDB
+k_mongo_primary: coss-dev-db:57900
+k_mongo_primary_name: krypto
+k_mongo_primary_username: krypto
+k_mongo_primary_pwd: devkrypto
+
+#MySQL balance
+mysql_balance_db: coss-dev-db:35600
+mysql_balance_username: messageuser
+mysql_balance_pwd: devmysqldb
+
+#Backend services
+exchange_server: coss-dev-exchange:15101
+exchange_server_pwd: P@ssw0rd123456
+
+# Nginx
+nginx_conf: nginx.conf
+site_conf: default.conf
+nginx_path: /etc/nginx
+
+# Tomcat
+ori_tmp_path: /tmp/app
+tomcat_app_conf: default.tomcat.conf
+tomcat_dest_conf: /etc/tomcat.conf
+webapp_destination_folder: /usr/share/apache-tomcat-8.0.28/webapps
+
+# NodeJS
+nodejs_conf: nodejs.default.production.conf
+nodejs_dest_conf: config/production.json
+nodejs_working_folder: /opt

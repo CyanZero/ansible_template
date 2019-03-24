@@ -1,0 +1,8 @@
+---
+
+- debug:
+    msg: "Start for common setup"
+
+- include: logrotate.yml
+  when:
+    - logrotate is defined

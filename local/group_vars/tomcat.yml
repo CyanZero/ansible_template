@@ -1,0 +1,2 @@
+tomcat_app_conf: default.tomcat.conf
+tomcat_dest_conf: /opt/tomcat/web-server.conf

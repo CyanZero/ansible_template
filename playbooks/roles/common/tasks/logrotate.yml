@@ -1,0 +1,6 @@
+---
+
+- name: Setup agent monitoring conf
+  template:
+    src: "{{ web_server_logrotate_conf }}.tpl"
+    dest: "{{ logrotate_config_dir }}/{{ web_server_logrotate_conf }}"
