@@ -64,7 +64,7 @@ This is a practical Ansible template that can be used immediately to support dif
 * gce_project_id = PROJECT NAME
 #### Configure gce.ini location to load GCP VMs into inventory
 ```export GCE_INI_PATH=${path to gce.ini}```
-###Verify setup and inventory
+### Verify setup and inventory
 Get the inventory list
 ```./dev_gcp/inventory/gce.py```
 
